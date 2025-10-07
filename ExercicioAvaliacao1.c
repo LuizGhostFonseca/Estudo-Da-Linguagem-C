@@ -1,6 +1,6 @@
 // 1 - Fazer os programas abaixo em Linguagem C utilizando obrigatoriamente matrizes unidimensionais e bidimensionais.
-/* A) Leia um vetor de 45 elementos referentes as notas dos alunos do 2 perÌodo de sistemas de informaÁ„o na disciplina de programaÁ„o estruturada. 
-Apresente a mÈdia geral da turma, a maior e amonr nota alcanÁada pelos estudantes*/
+/* A) Leia um vetor de 45 elementos referentes as notas dos alunos do 2 per√≠odo de sistemas de informa√ß√£o na disciplina de programa√ß√£o estruturada. 
+Apresente a m√©dia geral da turma, a maior e amonr nota alcan√ßada pelos estudantes*/
 #include <stdio.h>
 #include <locale.h>
 
@@ -17,17 +17,17 @@ int main() {
     menor = notas[1];
     for (int i = 0; i < 45; i++)
     {
-        if (maior > notas[i])
+        if (maior < notas[i])
         {
             maior = notas[i];
         }
-        if (menor < notas[i])
+        if (menor > notas[i])
         {
             menor = notas[i];
         }
     }
 
-    printf("A media geral da turma ficou de: %.02f e a menor nota foi %.02f, j· a maior nota foi %.02f ", media, menor, maior);
+    printf("A media geral da turma ficou de: %.02f e a menor nota foi %.02f, j√° a maior nota foi %.02f ", media, menor, maior);
     
     return 0;
     
